@@ -156,6 +156,7 @@ document.addEventListener('DOMContentLoaded', () =>{
     }
 
     function borrarCita(e){
+        //Se utiliza Number para retornar un numero
         let citaID = Number(e.target.parentElement.getAttribute('data-cita-id'));
 
         let transaction = DB.transaction(['citas'],'readwrite');
